@@ -1,0 +1,9 @@
+<h2>Add new todos</h2>
+<form class="todo-form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="task">Description</label>
+      <input type="text" id="task" name="task" [(ngModel)]="newTodo.task" required>
+    </div>
+    <button type="submit" class="submit-button" >Add Todo</button>
+  </form>
+  
